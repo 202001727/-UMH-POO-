@@ -1,1 +1,33 @@
+namespace CalculoSalarioSemanal
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            // Declaración de variables
+            double costoPorHora, horasTrabajadas, totalDevengado;
 
+            Console.WriteLine("=== CÁLCULO DE SALARIO SEMANAL ===");
+
+            // Entrada: Costo por hora
+            Console.Write("Ingrese el costo por hora trabajada: L. ");
+            costoPorHora = Convert.ToDouble(Console.ReadLine());
+
+            // Entrada: Horas trabajadas en la semana
+            Console.Write("Ingrese la cantidad de horas trabajadas en la semana: ");
+            horasTrabajadas = Convert.ToDouble(Console.ReadLine());
+
+            // Cálculo del salario total devengado
+            totalDevengado = costoPorHora * horasTrabajadas;
+
+            // Salida
+            Console.WriteLine("\n--- RESULTADO ---");
+            Console.WriteLine("Costo por hora: L. " + costoPorHora);
+            Console.WriteLine("Horas trabajadas: " + horasTrabajadas);
+            Console.WriteLine("Total devengado: L. " + totalDevengado);
+
+            Console.WriteLine("\nPresione cualquier tecla para salir...");
+            Console.ReadKey();
+        }
+    }
+}
